@@ -1,0 +1,15 @@
+let size = Number(prompt());
+let counterrow = 1;
+let countercol = 1;
+let characterempty = " ";
+let characterfull = "#";
+let string = ""
+for (; countercol <= size; countercol ++){
+  	for(; counterrow <= size; counterrow ++){
+   	if ((counterrow + countercol) % 2 == 0){string += characterfull;}
+    else {string += characterempty;}
+    }
+  	string += "\n"
+  	counterrow = 1;
+}
+console.log(string);
